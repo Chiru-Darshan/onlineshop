@@ -1,0 +1,141 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#: onlineshop/urls.py:18
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-10-05 07:02+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: cart/forms.py:11
+msgid "Quantity"
+msgstr ""
+
+#: coupons/forms.py:5
+msgid "Coupon"
+msgstr ""
+
+#: onlineshop/settings.py:149
+msgid "English"
+msgstr ""
+
+#: onlineshop/settings.py:150
+msgid "Spanish"
+msgstr ""
+
+#: onlineshop/urls.py:13
+msgid "cart/"
+msgstr ""
+
+#: onlineshop/urls.py:14
+msgid "rosetta/"
+msgstr ""
+
+#: onlineshop/urls.py:15
+msgid "orders/"
+msgstr ""
+
+#: onlineshop/urls.py:16
+msgid "payment/"
+msgstr ""
+
+#: onlineshop/urls.py:17
+msgid "coupons/"
+msgstr ""
+
+#: orders/models.py:11
+msgid "first_name"
+msgstr ""
+
+#: orders/models.py:12
+msgid "last_name"
+msgstr ""
+
+#: orders/models.py:13
+msgid "e-mail"
+msgstr ""
+
+#: orders/models.py:14
+msgid "address"
+msgstr ""
+
+#: orders/models.py:15
+msgid "postal_code"
+msgstr ""
+
+#: orders/models.py:16
+msgid "city"
+msgstr ""
+
+#: orders/templates/orders/order/create.html:4
+#: orders/templates/orders/order/create.html:6
+msgid "Checkout"
+msgstr ""
+
+#: orders/templates/orders/order/create.html:8
+msgid "Your order"
+msgstr ""
+
+#: orders/templates/orders/order/create.html:20
+#, python-format
+msgid ""
+"\n"
+"                        \"%(code)s\" (%(discount)s%% off)\n"
+"                    "
+msgstr ""
+
+#: orders/templates/orders/order/create.html:27
+msgid "Total"
+msgstr ""
+
+#: orders/templates/orders/order/create.html:33
+msgid "Place order"
+msgstr ""
+
+#: shop/templates/shop/_base.html:9 shop/templates/shop/_base.html:14
+msgid "Disha Shop"
+msgstr ""
+
+#: shop/templates/shop/_base.html:20
+msgid "Your cart"
+msgstr ""
+
+#: shop/templates/shop/_base.html:23
+#, python-format
+msgid ""
+"\n"
+"<!-- \n"
+"                        %(total_items)s item%(total_items|pluralize)s\n"
+"                        $%(cart.get_total_price)s -->\n"
+"                        %(items)s item, $%(total)s\n"
+"                        "
+msgid_plural ""
+"\n"
+"                            %(item)s items, $%(total)s\n"
+"                        "
+msgstr[0] ""
+msgstr[1] ""
+
+#: shop/templates/shop/_base.html:33
+msgid "Your cart is empty"
+msgstr ""
+
+#: shop/templates/shop/product/detail.html:21
+msgid "Add to cart"
+msgstr ""
+
+#: shop/templates/shop/product/detail.html:27
+msgid "People who bought this also"
+msgstr ""

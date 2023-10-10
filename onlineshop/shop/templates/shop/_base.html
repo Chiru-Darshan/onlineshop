@@ -1,0 +1,43 @@
+<!-- templates/shop/_base.html -->
+{% load static %}
+{% load i18n %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}{% trans 'Disha Shop' %} {% endblock title %}</title>
+    <link rel="stylesheet" href="{% static 'css/shop.css' %}">
+</head>
+<body>
+    <div id="header">
+        <a href="/" class="logo"> {% trans 'Disha Shop' %}</a>
+    </div>
+    <div id="subheader">
+        <div class="cart">
+            {% with total_items=cart|length %}
+                {% if total_items > 0 %}
+                    {% trans 'Your cart' %}:
+                    <a href="{% url 'cart:cart_detail' %}">
+
+                        {% blocktrans with total=cart.get_total_price count items=total_items %}
+<!-- 
+                        {{total_items}} item{{total_items|pluralize}}
+                        ${{cart.get_total_price}} -->
+                        {{items}} item, ${{total}}
+                        {% plural %}
+                            {{item}} items, ${{total}}
+                        {% endblocktrans %}
+                    </a>
+                {% elif not order %}
+                    {% trans 'Your cart is empty' %}.
+                {% endif %}
+            {% endwith %}
+        </div>
+    </div>
+    <div id="content">
+        {% block content %}
+        {% endblock content %}
+    </div>
+</body>
+</html>
